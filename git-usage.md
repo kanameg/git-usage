@@ -2,6 +2,21 @@
 
 ## git初期設定
 
+### ユーザー情報の設定
+```bash
+git config user.name "Your Name"
+git config user.email "you@example.com"
+```
+Gitのユーザー名とメールアドレスを設定します。これらはコミットのメタデータとして使用されます。
+ローカルだけでなく、グローバル設定を行う場合は、`--global`オプションを追加します。
+
+### マージの戦略設定
+```bash
+git config pull.rebase false
+```
+マージをデフォルトの動作に設定します。これにより、`git pull`を実行した際に、マージコミットが作成されます。
+
+
 ## git基本的な利用方法
 
 ### リポジトリのクローン
