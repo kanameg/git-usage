@@ -4,8 +4,8 @@
 
 ### ユーザー情報の設定
 ```bash
-git config user.name "Your Name"
-git config user.email "you@example.com"
+git config user.name "kanaemg"
+git config user.email "kanaemg@gmail.com"
 ```
 Gitのユーザー名とメールアドレスを設定します。これらはコミットのメタデータとして使用されます。
 ローカルだけでなく、グローバル設定を行う場合は、`--global`オプションを追加します。
