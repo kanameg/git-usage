@@ -85,3 +85,9 @@ git branch -d <branch-name>
 git push origin --delete <branch-name>
 ```
 リモートリポジトリから指定したブランチを削除します。
+
+### 現在のブランチの確認
+```bash
+git branch -vv
+```
+現在のブランチとその追跡状態を確認します。`-vv`オプションを使用すると、各ブランチの最新のコミットメッセージやリモート情報も表示されます。
