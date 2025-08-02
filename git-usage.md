@@ -85,3 +85,24 @@ git branch -d <branch-name>
 git push origin --delete <branch-name>
 ```
 リモートリポジトリから指定したブランチを削除します。
+
+
+## gitの小技・便利技
+
+### ステージングしてない変更の保存
+```bash
+git stash
+```
+ステージングしていない変更を一時的に保存します。後で`git stash pop`で復元できます。
+
+### 未トラッキングのステージングしていない変更の保存
+```bash
+git stash -u
+```
+トラッキングしていないファイルも含めて、すべての変更を一時的に保存します。後で`git stash pop`で復元できます。
+
+### stashした変更の復元
+```bash
+git stash pop
+```
+最後に保存したstashを復元し、スタッシュから削除します。
