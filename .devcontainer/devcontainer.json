@@ -1,0 +1,27 @@
+{
+  "name": "mdBook Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "mdBook Preview",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "bierner.markdown-mermaid"
+      ]
+    }
+  },
+  // コンテナが作成された後に実行するコマンド
+  // "postCreateCommand": "mdbook init",
+
+  // コンテナ内でVSCodeを実行するユーザーをroot以外にする場合
+  "remoteUser": "vscode",
+  "workspaceFolder": "/workspaces/git-usage"
+}

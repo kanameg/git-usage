@@ -1,0 +1,9 @@
+[book]
+authors = ["kanameg"]
+language = "ja"
+multilingual = false
+src = "src"
+title = "git使い方マニュアル"
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
