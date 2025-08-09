@@ -1,7 +1,7 @@
 {
   "name": "mdBook Environment",
   "dockerComposeFile": "docker-compose.yml",
-  "service": "mdbook",
+  "service": "git-usage",
   // "build": {
   //   "dockerfile": "Dockerfile"
   // },

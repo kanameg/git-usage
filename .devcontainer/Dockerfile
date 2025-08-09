@@ -25,4 +25,4 @@ RUN cargo install mdbook \
     && cargo install mdbook-mermaid
 
 # 作業ディレクトリを設定
-WORKDIR /workspaces/git-usage
+WORKDIR /workspace

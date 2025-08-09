@@ -1,9 +1,9 @@
 services:
-  mdbook: # service nameで、container_nameと合わせる
+  git-usage: # service nameで、container_nameと合わせる
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: mdbook
+    container_name: git-usage
     expose: 
       - 3000
     stdin_open: true
