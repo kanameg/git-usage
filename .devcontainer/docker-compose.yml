@@ -1,0 +1,13 @@
+services:
+  mdbook: # service nameで、container_nameと合わせる
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mdbook
+    expose: 
+      - 3000
+    stdin_open: true
+    tty: true
+    working_dir: /workspace
+    volumes:
+      - ../:/workspace

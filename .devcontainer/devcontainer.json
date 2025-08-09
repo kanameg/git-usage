@@ -1,8 +1,10 @@
 {
   "name": "mdBook Environment",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "mdbook",
+  // "build": {
+  //   "dockerfile": "Dockerfile"
+  // },
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
@@ -23,5 +25,5 @@
 
   // コンテナ内でVSCodeを実行するユーザーをroot以外にする場合
   "remoteUser": "vscode",
-  "workspaceFolder": "/workspaces/git-usage"
+  "workspaceFolder": "/workspace"
 }
